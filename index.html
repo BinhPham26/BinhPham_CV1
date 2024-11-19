@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BinhPham_CV</title>
+    <style type="text/css">
+      body {
+        margin: 0px 45px 0px 100px;
+       
+      }
+      video {
+        width: 100%;
+        height: auto;
+      }
+      nav {
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        width: 100%;
+      }
+      nav p,
+      nav img {
+        margin-top: -50px;
+      }
+      nav p {
+        margin: 2%;
+        font-size: 1.6vw;
+      
+        text-align: center;
+        border-radius: 20px;
+        padding: 8px;
+      }
+      nav a {
+        margin: 2%;
+        font-size: 1.6vw;
+        background-color: whitesmoke;
+        text-align: center;
+        border-radius: 20px;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+      }
+      nav a:hover {
+        box-shadow: 2px 2px 1px black;
+        border: 1px solid black;
+      }
+      a:visited {
+        color: black;
+      }
+
+      nav img {
+        width: 13%;
+        border-radius: 50%;
+        border: 7px solid white;
+      }
+      h2 {
+        text-shadow: 1px 1px 0.3px black;
+      }
+      .first {
+        width: 100%;
+
+      
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3vw;
+        margin-top: 10px;
+      }
+      .first div {
+        padding: 30px;
+        border-radius: 20px;
+        width: 48%;
+        border: 1px solid black;
+        background-color:thistle;
+        margin-right: 10px;
+      }
+      .first p {
+        text-indent: 2em;
+      }
+      .first li {
+        margin-top: 10px;
+      }
+      section {
+     
+        width: 75%;
+        margin-left: 17%;
+        margin-top: 10px;
+        display:flex;
+       flex-wrap: wrap;
+        gap:0px;
+      }
+      
+      .exp
+       {
+        position: relative;
+        width: 23%;
+        padding: 0.6em;
+        border: 0.1px groove seagreen;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-right: 1%;
+      background-color: white;
+      }
+
+      section video{
+        width: 30%;
+        height: auto;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+       
+    
+        
+      }
+      .exp > ol {
+        list-style-type: none;
+        margin-left: -40px;
+      }
+
+      ol > li {
+        position: relative;
+        margin: 0;
+        padding-bottom: 1em;
+        padding-left: 20px;
+        font-size: 1vw;
+      }
+
+      ol > li:before {
+        content: "";
+        background-color: #c00;
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 6px;
+        width: 3px;
+      }
+
+      ol > li:after {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23c00' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+        position: absolute;
+        left: 1.56px;
+        top: 0px;
+        height: 12px;
+        width: 12px;
+      }
+      h3  {
+        font-size: 1.4vw;
+      }
+      h4 {
+        font-size: 1.5vw;
+      }
+      ul>li {
+        margin-left: -25px;
+      }
+      
+
+      
+      figure {
+        text-align: center;
+     
+        width:22%;
+     margin: 3px;
+        margin-top: 5px;
+       z-index: 1;
+      }
+      figure img {
+        width:100%;
+        border-radius: 50%;
+        border: 3px solid slateblue;
+      }
+      figure:first-child{
+        margin-left: 7px;
+      }
+      figure figcation {
+        font-size: 0.9vw;
+      }
+      .like {
+        display: flex;
+        flex-direction: row;
+      }
+      .corse {
+     
+        width:100%;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+      }
+      .corse a {
+        text-decoration: none;
+        color: black;
+        width:50%;
+        border: none;
+      }
+      .corse a:hover {
+        border: none;
+        box-shadow: none;
+      }
+      .corse-in{
+        display:flex;
+        width:100%;
+    
+       
+        align-items: center;
+       
+        padding-bottom: 10px;
+      }
+      .corse img {
+        width:27%;
+        height:auto; 
+      }
+      .corse p {
+        font-size: 1.5vw;
+      }
+      .project {
+        display:flex;
+        flex-direction: column;
+        width:22%;
+        border: 0.1px solid black;
+       font-size: 1.1vw;
+
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+        margin-left: 30px;
+        
+      }
+      .chitiet {
+        margin-top: -4%;
+      }
+
+     .project-real {
+      border-bottom:groove;
+        padding-bottom: 1%;
+
+       
+     }
+      .project-mota {
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+      }
+      .project img {
+        width:100%;
+      }
+      
+      h {
+        margin-right: 3%;
+      }
+      h:first-child {
+        margin-left: 3%;
+      }
+      
+      .pro-1 {
+        width:32%;
+        margin-left: 3%;
+      }
+      .pro-2 {
+        width:65%;
+      }
+      footer {
+     
+        display: flex;
+        justify-content: center;
+        gap:4.6%;
+        background-color:cornsilk;
+      }
+      footer figure {
+        width:50%;
+        display:flex;
+        align-items: center;
+        border-radius: 50%;
+        
+      }
+      footer img {
+        border:none;
+        border-radius: 50%;
+        margin-right: 10%;
+      }
+      footer a {
+        width:10%;
+        text-decoration: none;
+        color:black;
+      }
+      footer a:hover {
+        border: none;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source src="video/Bia2 (7).mp4" type="video/mp4" />
+    </video>
+    <nav>
+      <a href="#infor">Thông tin</a>
+      <a href="#por">Portfolio</a>
+      <a href="#mys">Bản thân</a>
+      <img src="images/LEAD.png" alt="" />
+      <a href="#course">Khóa học</a>
+      <a href="#proj">Dự án</a>
+      <a href="#cont">Liên hệ</a>
+    </nav>
+    <div class="first" id="infor">
+      <div>
+        <h2>Thông tin cá nhân</h2>
+        <ul>
+          <li><strong>Họ và tên: </strong>Phạm Yên Bình</li>
+          <li><strong>Quê quán: </strong>Phú Yên</li>
+          <li><strong>Giới tính: </strong>Nam</li>
+          <li><strong>Ngày sinh: </strong>26/07/2001</li>
+          <li>
+            <strong>Địa chỉ thường trú: </strong>47 Nguyễn Lộ Trạch, Hòa Cường
+            Nam, Hải Châu, Đà Nẵng
+          </li>
+        </ul>
+      </div>
+      <div >
+        <h2>Mục tiêu nghề nghiệp</h2>
+        <p>
+          Là sinh viên lái ngành, dù quyết định đó là một thử thách lớn, nhưng
+          trong quá trình học lập trình, tôi nhận thấy niềm yêu thích mãnh liệt
+          và sự khát khao được khám phá sâu hơn trong lĩnh vực này. Tôi luôn tin
+          rằng sự kết hợp giữa kinh nghiệm lập trình, nỗ lực không ngừng và khả
+          năng tiếng Nhật sẽ là điểm mạnh giúp tôi phát triển vượt bậc trong
+          mảng CNTT.
+        </p>
+        <p>
+          Mục tiêu của tôi là không chỉ trở thành một lập trình viên giỏi, mà
+          còn tận dụng tốt kỹ năng ngoại ngữ để mở ra cơ hội kết nối quốc tế
+          trong ngành. Với quyết tâm học hỏi và ý chí bền bỉ, tôi tự tin rằng
+          mình có thể đạt được những cột mốc quan trọng trong sự nghiệp mới này.
+        </p>
+      </div>
+    </div>
+    <a href="https://binhpham26.github.io/Portifiloi/"><img src="images/PORTFOLI.png" id="por" style="width:45%;margin-top: 1em;border-radius: 10px;border: 1px solid black;background-color: #c00;margin-left: 26%;"></a>
+    <section id="mys">
+      <div class="exp">
+        <h3>Kinh nghiệm</h3>
+        <ol>
+          <li>
+            <strong>Giáo dục</strong><br />
+            <i>07/2019 - 7/2023</i>
+            <ul style="margin-top: 10px">
+              <li>
+                Độc lập giảng dạy tại các trung tâm dạy kèm Tin học và Toán học.
+              </li>
+              <li>
+                Dạy tiếng Việt cho người Tây và người Nhật tại trung tâm Ngoại
+                Ngữ Đà Nẵng và online
+              </li>
+            </ul>
+          </li>
+
+          <video autoplay loop>
+            <source src="images/LyLich/exp.mp4" type="video/mp4" />
+          </video>
+
+          <li>
+            <strong>Intership Nhật Bản</strong><br />
+            <i>08/2023 - 4/2024</i>
+            <ul style="margin-top: 10px">
+              <li>
+                Được hỗ trợ toàn bộ phí chương trình Intership tại Nhật.Tham gia
+                môi trường doanh nghiệp.
+              </li>
+              <li>
+                Được đào tạo chương trình đặc biệt "khuyến tài" về tư duy, tác
+                phong của Nhật Bản.
+              </li>
+              <li>
+                Hỗ trợ làm cầu nối giữa sinh viên tại trường Đại học và
+                doanh nghiệp Nhật Bản.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Trợ lý quản lý</strong><br />
+            <i>08/2023 - 4/2024</i><br />
+            <ul style="margin-top: 10px">
+              <li>
+                Quản lí một cửa hàng lưu niệm của sếp Nhật và tiếp
+                đón nghiệp đoàn Nhật.
+              </li>
+              <li>Quản lý nhân sự và teamwork hiệu quả.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="exp">
+        <video autoplay loop>
+          <source src="video/Study2.mp4" type="video/mp4" />
+        </video>
+        <h3>Học vấn</h3>
+        <ol>
+          <li>
+            <strong>Đại học Đông Á</strong><br />
+            <i>07/2019 - 7/2023</i>
+            <ul style="margin-top: 10px">
+              <li>Tốt nghiệp danh hiệu sinh viên loại Giỏi, GPA 3.3/4.0.</li>
+              <li>
+                Nhận học bổng Hoa Anh Đào, học bổng khuyến tài 50% học phí của
+                trường.
+              </li>
+            </ul>
+          </li>
+          <li><strong>Khóa học IT</strong><br/>Đang theo khóa học lập trình của trung tâm FUNiX</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="exp">
+        <video autoplay loop>
+          <source src="video/Act1.mp4" type="video/mp4" />
+        </video>
+        <h3>Hoạt động</h3>
+        <ol>
+          <li>
+            <strong>Thành lập CLB</strong><br />
+            <i>07/2019 - 11/2020</i><br />
+            <ul style="margin-top: 10px">
+              <li>Thành lập CLB guitar đầu tiên tại trường.</li>
+              <li>
+               Duy trì ổn định CLB và kết nối giao lưu đi diễn Acoutic.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Tham gia tình nguyện viên</strong><br />
+            <i>04/2021 - 8/2024</i><br />
+            <ul style="margin-top: 10px">
+              <li>
+                Tham gia CLB Sức Trẻ và các hoạt động tình nguyện viên Đà Nẵng.
+              </li>
+              <li>
+                Cùng CLB tham gia các hoạt động bùng nổ năng lượng như Sức trẻ làm, Bùng nổ ngày đông.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Diễn thuyết</strong><br />
+            <i>10/2024</i><br />
+            <ul style="margin-top: 10px">
+              <li>
+                Diễn thuyết về kỹ năng làm việc nhóm hiệu quả cho sinh viên.
+              </li>
+              <li>
+                Hỗ trợ làm cầu nối cho sinh viên các trường tiếp cận doanh nghiệp, đặc biệt là doanh nghiệp Nhật Bản.
+              </li>
+            </ul>
+          </li>
+
+          
+            
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div style="display:flex;flex-direction: column;" class="exp">
+        <video autoplay loop>
+          <source src="images/LyLich/Like.mp4" type="video/mp4" />
+        </video>
+        <h3>Sở thích</h3>
+        <div class="like"><figure>
+          <img src="images/Guitar.png" alt=""><br/>
+          <figcation>Guitar</figcation>
+        </figure>
+        <figure>
+          <img src="images/surf.png" alt=""><br/>
+          <figcation>Lướt sóng</figcation>
+        </figure>
+        <figure>
+          <img src="images/Travel.png" alt=""><br/>
+          <figcation>Du lịch</figcation>
+        </figure>
+        <figure>
+          <img src="images/Jp.png" alt=""><br/>
+          <figcation>Nhật</figcation>
+        </figure>
+      </div>
+        </div>
+        <div style="display:flex;flex-direction: column;" class="exp">
+        <video autoplay loop>
+          <source src="images/LyLich/language.mp4" type="video/mp4" />
+        </video>
+        <h3>Ngôn ngữ</h3>
+        <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Tiếng Anh</h4>
+        <div class="like">
+          <img src="images/thanh.png" style="width:22%;">
+          <img src="images/thanh.png"style="width:22%;;">
+          <img src="images/thanh (1).png"style="width:22%;">
+          <img src="images/thanh (1).png"style="width:22%;">
+      </div>
+      <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Tiếng Nhật JLPT N3 - Giao tiếp</h4>
+        <div class="like">
+          <img src="images/thanh.png" style="width:22%;">
+          <img src="images/thanh.png"style="width:22%;;">
+          <img src="images/thanh.png"style="width:22%;">
+          <img src="images/thanh (1).png"style="width:22%;">
+      </div>
+      <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Tiếng Nhật JLPT N3 - Đọc viết </h4>
+      <div class="like">
+        <img src="images/thanh.png" style="width:22%;">
+        <img src="images/thanh.png"style="width:22%;;">
+        <img src="images/thanh (1).png"style="width:22%;">
+        <img src="images/thanh (1).png"style="width:22%;">
+    </div>
+        </div>
+        <div style="display:flex;flex-direction: column;" class="exp">
+          <video autoplay loop>
+            <source src="images/LyLich/skill.mp4" type="video/mp4" />
+          </video>
+          <h3>Kỹ năng</h3>
+          <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Tin học văn phòng</h4>
+          <div class="like">
+            <img src="images/thanh.png" style="width:22%;">
+            <img src="images/thanh.png"style="width:22%;;">
+            <img src="images/thanh (1).png"style="width:22%;">
+            <img src="images/thanh (1).png"style="width:22%;">
+        </div>
+        <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Phản biện và giải quyết vấn đề</h4>
+          <div class="like">
+            <img src="images/thanh.png" style="width:22%;">
+            <img src="images/thanh.png"style="width:22%;;">
+            <img src="images/thanh.png"style="width:22%;">
+            <img src="images/thanh (1).png"style="width:22%;">
+        </div>
+        <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Kỹ năng làm việc nhóm hiệu quả</h4>
+        <div class="like">
+          <img src="images/thanh.png" style="width:22%;">
+          <img src="images/thanh.png"style="width:22%;;">
+          <img src="images/thanh.png"style="width:22%;">
+          <img src="images/thanh (1).png"style="width:22%;">
+          </div>
+          <h4 style="margin-bottom: 7px;font-size: 0.95vw;">Quản lí và thiết lập thời gian</h4>
+        <div class="like">
+          <img src="images/thanh.png" style="width:22%;">
+          <img src="images/thanh.png"style="width:22%;;">
+          <img src="images/thanh.png"style="width:22%;">
+          <img src="images/thanh (1).png"style="width:22%;">
+      </div>
+
+        </div>
+        </section>
+        <h2 style="font-size: 2vw;text-shadow: none;background-color:cadetblue;padding-left: 1em;
+        height:2em;display:flex;align-items:  center;" id="course">KHÓA HỌC</h2>
+        <div class="corse">
+          <a href="https://www.facebook.com/atendoanhnghiep">
+          <div class="corse-in" style="border-bottom: 2px solid black;">
+            
+              <img src="images/aten.jpg">
+              <div style="margin-left: 3%;"><h4>Khóa học tiếng Anh giao tiếp trung tâm Aten</h4>
+                <p>Hoàn thành khóa với điểm số 8.2/10</p></div>
+          </div></a>
+
+        <a href="https://www.facebook.com/funix.fpt">
+          <div class="corse-in" style="border-bottom: 2px solid black;">
+            
+              <img src="images/Funix.jpg">
+              <div style="margin-left: 3%;"><h4>Khóa học lập trình Java tại trung tâm FUNiX</h4>
+                <p>Đang quá trình học</p></div>
+        </div>  </a>
+        <a href="https://www.facebook.com/HocvienLEAD">
+        <div class="corse-in">
+            
+          <img src="images/Leadaca.png">
+          <div style="margin-left: 3%;"><h4>Khóa học kỹ năng doanh nghiệp</h4>
+            <p>Hoàn thành khóa học về tư duy, kỹ năng, teamwork hiệu quả, làm quen môi trường doanh nghiệp... Các yếu tố giúp công việc trở nên năng suất hơn, hiệu quả hơn. </p></div>
+      </div>
+
+</div></a>
+<h2 style="font-size: 2vw;text-shadow: none;background-color:cadetblue;padding-left: 1em;
+        height:2em;display:flex;align-items:  center;" id="proj">DỰ ÁN</h2>
+      <aside style="display:flex;"><div class="project">
+        <div class="project-real">
+          <img src="images/Front-end2.png">
+          <h4 style="font-size: 1vw;border-bottom:groove;
+        padding-bottom: 10px;">Front-end đơn giản cho Web bán hàng Handmade</h4>
+          <div class="chitiet">
+            <h>2024</h> 
+            <h>Dự án khách hàng</h>
+            <h>Front-end</h>
+          </div>
+          </div>
+          <div class="project-mota">
+            <div class="pro-1">Mô tả:</div>
+            <div class="pro-2">- Xây dựng hiển thị đơn giản cho dự án Web bán hàng Handmade.</div>
+            <div class="pro-1">Nhiệm vụ:</div>
+            <div class="pro-2">- Phát triển code - Review code - Tối ưu code.</div>
+            <div class="pro-1"> Công nghệ</div>
+            <div class="pro-2">- HTML,CSS</div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-real">
+          <img src="images/CV5.png">
+          <h4 style="font-size: 1vw;border-bottom:groove;
+        padding-bottom: 2%;">Front-end đơn giản cho Web CV cá nhân</h4>
+          <div class="chitiet">
+            <h >2024</h> 
+            <h>Dự án cá nhân</h>
+            <h>Front-end</h>
+          </div>
+          </div>
+          <div class="project-mota">
+            <div class="pro-1">Mô tả:</div>
+            <div class="pro-2">- Xây dựng hiển thị đơn giản cho dự án Web CV cá nhân.</div>
+            <div class="pro-1">Nhiệm vụ:</div>
+            <div class="pro-2">- Phát triển code - Review code - Tối ưu code.</div>
+            <div class="pro-1"> Công nghệ</div>
+            <div class="pro-2">- HTML,CSS</div>
+          </div>
+        </div>
+      </div></aside>
+      <footer id="cont">
+        <a href="https://www.facebook.com/vy.khang.3762">
+        <figure><img src="images/fb.png">
+          <figcation>Facebook</figcation></figure></a>
+          <a href="https://www.instagram.com/binh.pham2607/profilecard/?igsh=azBrejJmdXp6aWgx">
+          <figure><img src="images/ins.png">
+            <figcation>Instagram</figcation></figure></a>
+            <figure style="margin-right: 10%;width:5%;"><img src="images/gmail1.png">
+              <figcation>Binhphamyen2607@gmail.com</figcation></figure>
+              <figure style="margin-right: 9%;width:5%;"><img src="images/dt.png">
+                <figcation>0384114607</figcation></figure>
+      </footer>
+  </body>
+</html>
